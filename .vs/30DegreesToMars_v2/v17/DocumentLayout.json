@@ -54,7 +54,8 @@
               "RelativeToolTip": "30DegreesToMars_v2\\dashboard.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-24T01:13:40.158Z"
+              "WhenOpened": "2024-05-24T01:13:40.158Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -66,7 +67,8 @@
               "RelativeToolTip": "30DegreesToMars_v2\\control.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-24T01:12:51.624Z"
+              "WhenOpened": "2024-05-24T01:12:51.624Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -78,7 +80,8 @@
               "RelativeToolTip": "30DegreesToMars_v2\\control.aspx.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T01:12:48.756Z"
+              "WhenOpened": "2024-05-24T01:12:48.756Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -90,7 +93,8 @@
               "RelativeToolTip": "30DegreesToMars_v2\\Registration.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-22T00:00:06.443Z"
+              "WhenOpened": "2024-05-22T00:00:06.443Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -98,8 +102,8 @@
               "Title": "login.aspx",
               "DocumentMoniker": "C:\\Users\\jasph\\source\\repos\\30DegreesToMars_v2_clean\\30DegreesToMars_v2\\login.aspx",
               "RelativeDocumentMoniker": "30DegreesToMars_v2\\login.aspx",
-              "ToolTip": "C:\\Users\\jasph\\source\\repos\\30DegreesToMars_v2_clean\\30DegreesToMars_v2\\login.aspx",
-              "RelativeToolTip": "30DegreesToMars_v2\\login.aspx",
+              "ToolTip": "C:\\Users\\jasph\\source\\repos\\30DegreesToMars_v2_clean\\30DegreesToMars_v2\\login.aspx*",
+              "RelativeToolTip": "30DegreesToMars_v2\\login.aspx*",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-05-21T23:52:04.699Z",

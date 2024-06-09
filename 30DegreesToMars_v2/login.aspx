@@ -13,7 +13,7 @@
         <div class="header-container">
             <div class="logo">
                 <div class="logo-content">
-                    <img src="logo.png" style="width: 150px; height: 150px" alt="Logo">
+                    <img src="img/logo.png" style="width: 150px; height: 150px" alt="Logo"> 
                     <asp:Label ID="Label1" runat="server" CssClass="item1" Text="30° TO MARS" Style="font-size: 70px; color: white;"></asp:Label>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                         </div>
                         <div class="group">
                             <label for="dob" class="label">Date of Birth</label>
-                            <input id="dob" type="text" class="input">
+                            <input id="dob" type="date" class="input" />
                         </div>
                         <div class="group">
                             <label for="user" class="label">Username</label>
