@@ -70,7 +70,7 @@ body {
     margin: 0;
     color: #6a6f8c;
     font: 600 16px/18px "Open Sans", sans-serif;
-    background: url(martian.jpg);
+    background: url(img/martian.jpg);
     background-size: cover;
 }
 
@@ -102,7 +102,7 @@ a {
     max-width: 450px;
     min-height: 670px;
     position: relative;
-    background: url(Rover.jpg) no-repeat center;
+    background: url(img/Rover.jpg) no-repeat center;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     align-items:center;
     margin-top:50px;
