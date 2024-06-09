@@ -34,18 +34,18 @@
                     <div class="sign-in-htm">
                         <div class="group">
                             <label for="user" class="label">Username</label>
-                            <input id="user" type="text" class="input">
+                             <asp:TextBox ID="userSI" runat="server" type="text" class="input"></asp:TextBox>
                         </div>
                         <div class="group">
                             <label for="pass" class="label">Password</label>
-                            <input id="pass" type="password" class="input" data-type="password">
+                            <asp:TextBox ID="passSI" runat="server" type="password" class="input" data-type="password"></asp:TextBox>
                         </div>
                         <div class="group">
                             <input id="check" type="checkbox" class="check" checked>
                             <label for="check"><span class="icon"></span> Keep me Signed in</label>
                         </div>
                         <div class="group">
-                            <input type="submit" class="button" value="Sign In" onclick="Button2_Click">
+                            <input type="submit" class="button" value="Sign In">
                         </div>
                         <div class="hr"></div>
                         <div class="foot-lnk">
@@ -55,31 +55,31 @@
                     <div class="sign-up-htm">
                         <div class="group">
                             <label for="fname" class="label">First Name</label>
-                            <input id="fname" type="text" class="input">
+                            <asp:TextBox ID="fname" runat="server" type="text" class="input"></asp:TextBox>
                         </div>
                         <div class="group">
                             <label for="lname" class="label">Last Name</label>
-                            <input id="lname" type="text" class="input">
+                            <asp:TextBox ID="lname" runat="server" type="text" class="input"></asp:TextBox>
                         </div>
                         <div class="group">
                             <label for="dob" class="label">Date of Birth</label>
-                            <input id="dob" type="date" class="input" />
+                            <asp:TextBox ID="dob" runat="server"  type="date" class="input"></asp:TextBox>
                         </div>
                         <div class="group">
                             <label for="user" class="label">Username</label>
-                            <input id="user" type="text" class="input">
+                            <asp:TextBox ID="userSU" runat="server" type="text" class="input"></asp:TextBox>
                         </div>
                         <div class="group">
                             <label for="pass" class="label">Password</label>
-                            <input id="pass" type="password" class="input" data-type="password">
+                            <asp:TextBox ID="passSU" runat="server" type="password" class="input" data-type="password"></asp:TextBox>
                         </div>
                         <div class="group">
                             <label for="pass" class="label">Repeat Password</label>
-                            <input id="pass" type="password" class="input" data-type="password">
+                            <asp:TextBox ID="rpassSU" runat="server" type="password" class="input" data-type="password"></asp:TextBox>
                         </div>
 
                         <div class="group">
-                            <input type="submit" class="button" value="Sign Up">
+                            <asp:Button ID="Button1" runat="server" class="button" Text="Sign Up" onclick="SignUp"/>
                         </div>
                         <div class="hr"></div>
                     </div>
