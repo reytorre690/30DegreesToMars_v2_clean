@@ -12,7 +12,7 @@
         <div class="header-container">
             <div class="logo">
                 <div class="logo-content">
-                    <img src="img/logo.png" style="width: 150px; height: 150px" alt="Logo"> 
+                    <img src="img/logo.png" style="width: 150px; height: 150px" alt="Logo"/>
                     <asp:Label ID="Label6" runat="server" CssClass="item1" Text="30° TO MARS" Style="font-size: 70px; font-family: 'Arial Rounded MT';"></asp:Label>
                 </div>
             </div>
@@ -49,13 +49,18 @@
                 </div>
                 <div class="tr">
                     <div class="td">
-                        <asp:Label ID="Label5" runat="server" Text="Confirm"></asp:Label><br />
-                        <asp:Label ID="Label7" runat="server" Text="Password:"></asp:Label>
+                        <asp:Label ID="Label5" runat="server" Text="Confirm Pass:"></asp:Label>
                         <asp:TextBox ID="TextBox5" class="ip1" runat="server"></asp:TextBox>
-                    </div>
+                       </div>
                 </div>
                 <div class="tr">
-                    <asp:Button ID="Button1" runat="server" class="subbutton" Text="SUBMIT" />
+                     <div class="td">
+                           <asp:Label ID="Label9" runat="server" Text="Date of Birth"></asp:Label>
+                          <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+                    </div>
+                  </div>
+                <div class="td">
+                    <asp:Button ID="Button1" runat="server" class="subbutton" Text="SUBMIT" Onclick="button_pressed" />
                 </div>
                 <div class="tr">
                     <br />

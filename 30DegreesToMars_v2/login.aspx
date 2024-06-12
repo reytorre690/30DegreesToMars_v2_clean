@@ -56,7 +56,7 @@
                 </div>
                 <div class="tr">
                     <div class="td">
-                        <asp:Button ID="Button2" runat="server" class="subbutton" Text="SUBMIT" OnClick="Button2_Click " />
+                        <asp:Button ID="Button2" runat="server" class="subbutton" Text="SUBMIT" OnClick="Button2_Click" />
                         <div class="line"></div>
                         <i>
                             <asp:Label ID="Label6" runat="server" class="ofisg" Text="Our family is growing."></asp:Label></i>

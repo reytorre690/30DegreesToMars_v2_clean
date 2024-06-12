@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -15,7 +18,25 @@ namespace _30DegreesToMars_v2
         }
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/dashboard.aspx");
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("exec dbo.authenticate_user_credentials @uname, @upass", con);
+            cmd.Parameters.AddWithValue("@uname", TextBox1.Text);
+            cmd.Parameters.AddWithValue("@upass", TextBox2.Text);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                Response.Redirect("~/dashboard.aspx");
+            }
+            else
+            {
+
+                Label3.Visible = true;
+                Label3.Text = "Wrong Details";
+            }
+
         }
     }
 }
