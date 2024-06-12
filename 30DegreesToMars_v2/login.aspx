@@ -13,19 +13,80 @@
         <div class="header-container">
             <div class="logo">
                 <div class="logo-content">
-                <img src="img/logo.png" style="width: 150px; height: 150px" alt="Logo"> 
-                <asp:Label ID="Label1" runat="server" CssClass="item1" Text="30° TO MARS" Style="font-size: 70px; font-family: 'Arial Rounded MT';"></asp:Label>
-            </div>
+                    <img src="img/logo.png" style="width: 150px; height: 150px" alt="Logo"> 
+                    <asp:Label ID="Label1" runat="server" CssClass="item1" Text="30° TO MARS" Style="font-size: 70px; color: white;"></asp:Label>
                 </div>
+            </div>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">Planet</a></li>
-                    <li><a href="#">Program</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="#" class="list">Planet</a></li>
+                    <li><a href="#" class="list">Program</a></li>
+                    <li><a href="#" class="list">About Us</a></li>
                 </ul>
             </nav>
-             </div>
+        </div>
         <!-- Main -->
+        <div class="login-wrap">
+            <div class="login-html">
+                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                <div class="login-form">
+                    <div class="sign-in-htm">
+                        <div class="group">
+                            <label for="user" class="label">Username</label>
+                             <asp:TextBox ID="userSI" runat="server" type="text" class="input"></asp:TextBox>
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <asp:TextBox ID="passSI" runat="server" type="password" class="input" data-type="password"></asp:TextBox>
+                        </div>
+                        <div class="group">
+                            <input id="check" type="checkbox" class="check" checked>
+                            <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="Sign In">
+                        </div>
+                        <div class="hr"></div>
+                        <div class="foot-lnk">
+                            <a href="#forgot">Forgot Password?</a>
+                        </div>
+                    </div>
+                    <div class="sign-up-htm">
+                        <div class="group">
+                            <label for="fname" class="label">First Name</label>
+                            <asp:TextBox ID="fname" runat="server" type="text" class="input"></asp:TextBox>
+                        </div>
+                        <div class="group">
+                            <label for="lname" class="label">Last Name</label>
+                            <asp:TextBox ID="lname" runat="server" type="text" class="input"></asp:TextBox>
+                        </div>
+                        <div class="group">
+                            <label for="dob" class="label">Date of Birth</label>
+                            <asp:TextBox ID="dob" runat="server"  type="date" class="input"></asp:TextBox>
+                        </div>
+                        <div class="group">
+                            <label for="user" class="label">Username</label>
+                            <asp:TextBox ID="userSU" runat="server" type="text" class="input"></asp:TextBox>
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <asp:TextBox ID="passSU" runat="server" type="password" class="input" data-type="password"></asp:TextBox>
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Repeat Password</label>
+                            <asp:TextBox ID="rpassSU" runat="server" type="password" class="input" data-type="password"></asp:TextBox>
+                        </div>
+
+                        <div class="group">
+                            <asp:Button ID="Button1" runat="server" class="button" Text="Sign Up" onclick="SignUp"/>
+                        </div>
+                        <div class="hr"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main 
         <div class="main-container">
             <div class="table">
                 <div class="th">
@@ -65,11 +126,10 @@
                     </div>
                 </div>
             </div>
+            <img src="Astro.jpg" style="width: 300px; height: 492px" alt="Image">
             </div>
-           <!-- <div class="th">
-                <img src="StockCake-Mars Rover Exploration_1713601338.jpg" style="width: 450px; height: 492px" alt="Image">
-            </div>
-        </div> -->
+                
+         -->
         <div class="footer-container">
             <asp:Label ID="Label8" runat="server" Text="TALK TO US" Style="font-size: 20px; font-family: 'Arial Rounded MT';"></asp:Label>
             <asp:Label ID="Label9" runat="server" class="text-footer" Text="(04) 298 3985 2092"></asp:Label>
