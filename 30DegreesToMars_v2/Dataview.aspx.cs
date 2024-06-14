@@ -17,6 +17,7 @@ namespace _30DegreesToMars_v2
             if (!IsPostBack)
             {
                 BindGridView();
+                //
             }
         }
 
