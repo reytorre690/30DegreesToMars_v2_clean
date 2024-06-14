@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+<<<<<<< HEAD
 using System.Diagnostics;
+=======
+using System.Data;
+>>>>>>> d2b1157f022bab9814226e2a3a8190232e07b7c0
 using System.Linq;
 using System.Reflection.Emit;
 using System.Web;
@@ -21,6 +25,7 @@ namespace _30DegreesToMars_v2
 
         public void SignUp(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
             RequiredFieldValidator1.Enabled = true;
             RequiredFieldValidator2.Enabled = true;
@@ -208,6 +213,27 @@ namespace _30DegreesToMars_v2
                 SIisValid = false;
             }
             return SIisValid;
+=======
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("exec dbo.authenticate_user_credentials @uname, @upass", con);
+            cmd.Parameters.AddWithValue("@uname", TextBox1.Text);
+            cmd.Parameters.AddWithValue("@upass", TextBox2.Text);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                Response.Redirect("~/dashboard.aspx");
+            }
+            else
+            {
+
+                Label3.Visible = true;
+                Label3.Text = "Wrong Details";
+            }
+
+>>>>>>> d2b1157f022bab9814226e2a3a8190232e07b7c0
         }
     }
 }

@@ -69,10 +69,13 @@
   <ItemGroup>
     <Content Include="control.aspx" />
     <Content Include="dashboard.aspx" />
+    <Content Include="Dataview.aspx" />
     <Content Include="HTMLPage1.html" />
     <Content Include="login.aspx" />
     <Content Include="navbar.html" />
     <Content Include="style.css" />
+    <Content Include="successfully_signedup.aspx" />
+    <Content Include="unsuccessful_signedup.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -90,6 +93,13 @@
     <Compile Include="dashboard.aspx.designer.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Dataview.aspx.cs">
+      <DependentUpon>Dataview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dataview.aspx.designer.cs">
+      <DependentUpon>Dataview.aspx</DependentUpon>
+    </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -98,6 +108,30 @@
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="successfully_signedup.aspx.cs">
+      <DependentUpon>successfully_signedup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="successfully_signedup.aspx.designer.cs">
+      <DependentUpon>successfully_signedup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="unsuccessful_signedup.aspx.cs">
+      <DependentUpon>unsuccessful_signedup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="unsuccessful_signedup.aspx.designer.cs">
+      <DependentUpon>unsuccessful_signedup.aspx</DependentUpon>
+    </Compile>
+>>>>>>> d2b1157f022bab9814226e2a3a8190232e07b7c0
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
