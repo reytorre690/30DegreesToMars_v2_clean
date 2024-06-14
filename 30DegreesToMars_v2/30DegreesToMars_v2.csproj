@@ -73,7 +73,6 @@
     <Content Include="HTMLPage1.html" />
     <Content Include="login.aspx" />
     <Content Include="navbar.html" />
-    <Content Include="Registration.aspx" />
     <Content Include="style.css" />
     <Content Include="successfully_signedup.aspx" />
     <Content Include="unsuccessful_signedup.aspx" />
@@ -109,6 +108,8 @@
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
+=======
     <Compile Include="Registration.aspx.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -130,6 +131,7 @@
     <Compile Include="unsuccessful_signedup.aspx.designer.cs">
       <DependentUpon>unsuccessful_signedup.aspx</DependentUpon>
     </Compile>
+>>>>>>> d2b1157f022bab9814226e2a3a8190232e07b7c0
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
